@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Võ Lê Quốc Đoàn       </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        /* Khung CV */
+        .cv-container {
+            display: flex;
+            width: 850px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* --- CỘT TRÁI --- */
+        .cv-left {
+            width: 40%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 30px 20px;
+        }
+
+        /* --- CỘT PHẢI --- */
+        .cv-right {
+            width: 60%;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 30px 30px;
+        }
+
+        /* Ảnh đại diện */
+        .avatar-box {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 25px auto;
+            border: 3px solid #ffffff;
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Tiêu đề mục */
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cv-left .section-title {
+            border-color: #ffffff;
+        }
+
+        .cv-right .section-title {
+            border-color: #000000;
+        }
+
+        /* Danh sách và văn bản */
+        ul {
+            padding-left: 18px;
+        }
+
+        li, p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        /* Phần tên và vị trí ở cột phải */
+        .name {
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- CỘT TRÁI -->
+        <div class="cv-left">
+            <!-- Ảnh đại diện -->
+            <div class="avatar-box">
+                <img src="c:\Users\DELL\Pictures\1794969972160_423614436134964258_5576628209225367718_h.jpg" alt="để tạm">
+            </div>
+
+            <div class="section-title">Thông tin cá nhân</div>
+            <ul>
+                <li>Sinh năm: 30/01/2008</li>
+                <li>MSSV: 52.01.104.019</li>
+                <li>Quê:Vĩnh Long </li>
+                <li>Học tập tại Trường Đại học Sư Phạm Thành phố Hồ Chí Minh (HCMUE)</li>
+            </ul>
+
+            <div class="section-title">Kỹ năng</div>
+            <ul>
+                <li>Giao tiếp tốt</li>
+            </ul>
+
+            <div class="section-title">Sở thích</div>
+            <ul>
+                <li>Cầu lông</li>
+                <li>Nghe nhạc</li>
+                <li>Về quê</li>
+            </ul>
+        </div>
+
+        <!-- CỘT PHẢI -->
+        <div class="cv-right">
+            <div class="name">Võ Lê Quốc Đoàn</div>
+            <div class="job-title">Sinh viên ngành Công nghệ thông tin lớp CNTT.C</div>
+
+            <div class="section-title">Chứng chỉ</div>
+            <p>Đã tốt nghiệp: Mẫu giáo, cấp tiểu học, cấp THCS, cấp THPT</p>
+
+            <div class="section-title">Kinh nghiệm học tập đại học</div>
+            <p>Nền tảng học tập vững chắc:Vừa hoàn thành bậc phổ thông tại Trường THPT Cầu Ngang B với kết quả tổ hợp A00 tốt. Hiện tại, đang là sinh viên năm nhất tại Trường Đại học Sư phạm TP.HCM.</p>
+            <p>Trải nghiệm chuyên ngành đa dạng: Đang tiếp cận với các môn học mang tính nền tảng và kỹ thuật cao, từ lập trình C++, phát triển web (HTML, CSS, JavaScript, jQuery, Bootstrap 5) cho đến toán rời rạc và giải tích.</p>
+            <p>Chủ động và linh hoạt trong định hướng: Luôn biết cách tìm hiểu trước thông tin, cân nhắc kỹ lưỡng các lựa chọn về lộ trình học tập, quy chế tín chỉ cũng như các phương án học tập khác nhau.</p>
+        </div>
+    </div>
+
+</body>
+</html>

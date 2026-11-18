@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.1.1. Hồ cá vui nhộn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* tạo nền xanh */
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #005c97, #363795, #0f2027);
+        }
+
+        #content {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* cá bơi */
+        #shark {
+            position: absolute;
+            animation: SharkSwim 14s linear infinite;
+        }
+        #shark img {
+            width: 220px;
+            height: auto;
+        }
+        @keyframes SharkSwim {
+            0%   { left: 5%; top: 12%; transform: scaleX(1); }
+            48%  { left: 78%; top: 20%; transform: scaleX(1); }
+            50%  { left: 78%; top: 20%; transform: scaleX(-1); /* Quay đầu */ }
+            98%  { left: 5%; top: 12%; transform: scaleX(-1); }
+            100% { left: 5%; top: 12%; transform: scaleX(1); }
+        }
+
+        /* rùa bơi */
+        #turtle {
+            position: absolute;
+            animation: TurtleSwim 22s linear infinite;
+        }
+        #turtle img {
+            width: 150px;
+            height: auto;
+        }
+        @keyframes TurtleSwim {
+            0%   { left: 10%; top: 48%; transform: scaleX(1); }
+            48%  { left: 82%; top: 58%; transform: scaleX(1); }
+            50%  { left: 82%; top: 58%; transform: scaleX(-1); /* Quay đầu */ }
+            98%  { left: 10%; top: 48%; transform: scaleX(-1); }
+            100% { left: 10%; top: 48%; transform: scaleX(1); }
+        }
+
+        /* cá bơi */
+        #goldFishSchool {
+            position: absolute;
+            animation: FishSwim 16s linear infinite;
+        }
+        #goldFishSchool img {
+            width: 160px;
+            height: auto;
+        }
+        @keyframes FishSwim {
+            0%   { left: 15%; top: 30%; transform: scaleX(1); }
+            48%  { left: 80%; top: 25%; transform: scaleX(1); }
+            50%  { left: 80%; top: 25%; transform: scaleX(-1); }
+            98%  { left: 15%; top: 30%; transform: scaleX(-1); }
+            100% { left: 15%; top: 30%; transform: scaleX(1); }
+        }
+
+        /* size thợ lặn */
+        #diver1 img, #diver2 img, #diver3 img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* thợ 1 */
+        #diver1 {
+            position: absolute;
+            left: 15%;
+            animation: Diver1Move 7s ease-in-out infinite alternate;
+        }
+        @keyframes Diver1Move {
+            0%   { top: 55%; }
+            100% { top: 78%; }
+        }
+
+        /* thợ 2 */
+        #diver2 {
+            position: absolute;
+            left: 45%;
+            animation: Diver2Move 9s ease-in-out infinite alternate;
+        }
+        @keyframes Diver2Move {
+            0%   { top: 75%; }
+            100% { top: 48%; }
+        }
+
+        /* thợ 3 */
+        #diver3 {
+            position: absolute;
+            right: 15%;
+            animation: Diver3Move 8s ease-in-out infinite alternate;
+        }
+        @keyframes Diver3Move {
+            0%   { top: 25%; }
+            100% { top: 65%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <!-- 1. Cá mập[cite: 7] -->
+        <div id="shark">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa19252.31079\shark.png" alt="Cá mập">
+        </div>
+
+        <!-- 2. Rùa biển[cite: 8] -->
+        <div id="turtle">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa16800.15152\turtle.png" alt="Rùa">
+        </div>
+
+        <!-- 3. Đàn cá vàng[cite: 6] -->
+        <div id="goldFishSchool">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa19252.28437\goldFishSchool.png" alt="goldFishSchool">
+        </div>
+
+        <!-- 4. Thợ lặn 1[cite: 3] -->
+        <div id="diver1">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa16800.35183\diver1.png" alt="diver1">
+        </div>
+
+        <!-- 5. Thợ lặn 2[cite: 4] -->
+        <div id="diver2">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa16800.7535\diver2.png" alt="diver2">
+        </div>
+
+        <!-- 6. Thợ lặn 3[cite: 5] -->
+        <div id="diver3">
+            <img src="c:\Users\DELL\AppData\Local\Temp\Rar$DRa16800.11123\diver3.png" alt="diver3">
+        </div>
+    </div>
+
+</body>
+</html>
